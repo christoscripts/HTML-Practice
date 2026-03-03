@@ -3,6 +3,12 @@
     padding: 0;
     text-align: center;
 }
+.box{
+    width: 100px;
+    height: 100px;
+    /* display: inline-block; */
+    background-color: burlywood;
+}
 .box1{
     background-color: saddlebrown;
 }
@@ -11,6 +17,7 @@
 }
 .box3{
     background-color: seagreen;
+    align-self: flex-end;
 }
 .box4{
     background-color: sandybrown;
@@ -18,16 +25,42 @@
 .box5{
     background-color: maroon;
 }
-.box{
-    width: 100px;
-    height: 100px;
-    /* display: inline-block; */
-}
 #container{
     border: 2px solid black;
     width: 700px;
+    height: 400px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column-reverse;
-    height: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: flex-start; */
+
+    /* flex-direction: column-reverse; */
+}
+
+.navbar{
+    background-color: rgb(48, 48, 48);
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 50px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    /* display: inline; */
+}   
+a:hover{
+    background-color: seagreen;
+}
+.header-logo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 28px;
 }
